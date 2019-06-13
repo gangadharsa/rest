@@ -1,0 +1,9 @@
+from django.shortcuts import render
+from datetime import datetime
+
+# Create your views here.
+class Comment:
+    def __init__(self,email,content,created=None):
+        self.email=email
+        self.content=content
+        self.created=created or datetime.now()
